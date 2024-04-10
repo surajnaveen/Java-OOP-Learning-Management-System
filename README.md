@@ -6,6 +6,6 @@ This project is an exploration of Object-Oriented Programming (OOP) concepts in 
 
 # Relational database management system (SQL) 
 The SQL queries provide in this repository
-![SQL][def]
+[SQL][def]
 
 [def]: ./java_lms_database_SQL.sql
