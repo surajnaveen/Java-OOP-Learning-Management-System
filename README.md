@@ -5,7 +5,5 @@ This project is an exploration of Object-Oriented Programming (OOP) concepts in 
 ![ER Diagram](./Media/JavaMiniProjectER%20-%20Copy.jpg)
 
 # Relational database management system (SQL) 
-The SQL queries provide in this repository
-[SQL][def]
-
+The [SQL][def] queries provide in this repository
 [def]: ./java_lms_database_SQL.sql
