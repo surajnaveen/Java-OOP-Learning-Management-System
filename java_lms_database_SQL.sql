@@ -277,34 +277,35 @@ CREATE TABLE `user` (
   `Address` varchar(150) NOT NULL,
   `Email` varchar(150) NOT NULL,
   `Gender` char(10) NOT NULL,
-  `Password` varchar(200) NOT NULL
+  `Password` varchar(200) NOT NULL,
+  `status` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`User_ID`, `First_name`, `Mid_name`, `Last_name`, `NIC`, `Address`, `Email`, `Gender`, `Password`) VALUES
-(21, 'Emma', '', 'Taylor', '123456789011V', '123 Main St', 'emma@example.com', 'female', 'password123'),
-(22, 'William', '', 'Brown', '234567890122V', '456 Elm St', 'william@example.com', 'male', 'password456'),
-(23, 'Sophia', '', 'Johnson', '345678901234V', '789 Oak St', 'sophia@example.com', 'female', 'password789'),
-(24, 'Daniel', '', 'Anderson', '456789012345V', '321 Maple St', 'daniel@example.com', 'male', 'password101'),
-(25, 'Olivia', '', 'Martinez', '567890123456V', '654 Pine St', 'olivia@example.com', 'female', 'password202'),
-(26, 'Noah', '', 'Hernandez', '678901234567V', '987 Cedar St', 'noah@example.com', 'male', 'password303'),
-(27, 'Ava', '', 'Garcia', '789012345678V', '111 Walnut St', 'ava@example.com', 'female', 'password404'),
-(28, 'Ethan', '', 'Wilson', '890123456789V', '222 Elm St', 'ethan@example.com', 'male', 'password505'),
-(29, 'Mia', '', 'Thomas', '901234567890V', '333 Oak St', 'mia@example.com', 'female', 'password606'),
-(30, 'James', '', 'Rodriguez', '012345678901V', '444 Maple St', 'james@example.com', 'male', 'password707'),
-(111, 'John', '', 'Doe', '123456789012V', '123 Main St', 'john@example.com', 'male', 'password123'),
-(112, 'Alice', '', 'Smith', '2345678901234', '456 Elm St', 'alice@example.com', 'female', 'password456'),
-(113, 'Bob', '', 'Johnson', '3456789012345', '789 Oak St', 'bob@example.com', 'male', 'password789'),
-(114, 'Emily', '', 'Brown', '4567890123456', '321 Maple St', 'emily@example.com', 'female', 'password101'),
-(115, 'Michael', '', 'Davis', '5678901234567', '654 Pine St', 'michael@example.com', 'male', 'password202'),
-(116, 'Emma', '', 'Wilson', '6789012345678', '987 Cedar St', 'emma@example.com', 'female', 'password303'),
-(117, 'David', '', 'Martinez', '7890123456789', '111 Walnut St', 'david@example.com', 'male', 'password404'),
-(118, 'Olivia', '', 'Anderson', '8901234567890', '222 Elm St', 'olivia@example.com', 'female', 'password505'),
-(119, 'James', '', 'Garcia', '9012345678901', '333 Oak St', 'james@example.com', 'male', 'password606'),
-(120, 'Sophia', '', 'Hernandez', '0123456789012', '444 Maple St', 'sophia@example.com', 'female', 'password707');
+INSERT INTO `user` (`User_ID`, `First_name`, `Mid_name`, `Last_name`, `NIC`, `Address`, `Email`, `Gender`, `Password`,`status`) VALUES
+(21, 'Emma', '', 'Taylor', '123456789011V', '123 Main St', 'emma@example.com', 'female', 'password123','student'),
+(22, 'William', '', 'Brown', '234567890122V', '456 Elm St', 'william@example.com', 'male', 'password456','student'),
+(23, 'Sophia', '', 'Johnson', '345678901234V', '789 Oak St', 'sophia@example.com', 'female', 'password789','student'),
+(24, 'Daniel', '', 'Anderson', '456789012345V', '321 Maple St', 'daniel@example.com', 'male', 'password101','student'),
+(25, 'Olivia', '', 'Martinez', '567890123456V', '654 Pine St', 'olivia@example.com', 'female', 'password202','student'),
+(26, 'Noah', '', 'Hernandez', '678901234567V', '987 Cedar St', 'noah@example.com', 'male', 'password303','lecturer'),
+(27, 'Ava', '', 'Garcia', '789012345678V', '111 Walnut St', 'ava@example.com', 'female', 'password404','lecturer'),
+(28, 'Ethan', '', 'Wilson', '890123456789V', '222 Elm St', 'ethan@example.com', 'male', 'password505','lecturer'),
+(29, 'Mia', '', 'Thomas', '901234567890V', '333 Oak St', 'mia@example.com', 'female', 'password606','lecturer'),
+(30, 'James', '', 'Rodriguez', '012345678901V', '444 Maple St', 'james@example.com', 'male', 'password707','lecturer'),
+(111, 'John', '', 'Doe', '123456789012V', '123 Main St', 'john@example.com', 'male', 'password123','lecturer'),
+(112, 'Alice', '', 'Smith', '2345678901234', '456 Elm St', 'alice@example.com', 'female', 'password456','lecturer'),
+(113, 'Bob', '', 'Johnson', '3456789012345', '789 Oak St', 'bob@example.com', 'male', 'password789','lecturer'),
+(114, 'Emily', '', 'Brown', '4567890123456', '321 Maple St', 'emily@example.com', 'female', 'password101','lecturer'),
+(115, 'Michael', '', 'Davis', '5678901234567', '654 Pine St', 'michael@example.com', 'male', 'password202','TO'),
+(116, 'Emma', '', 'Wilson', '6789012345678', '987 Cedar St', 'emma@example.com', 'female', 'password303','TO'),
+(117, 'David', '', 'Martinez', '7890123456789', '111 Walnut St', 'david@example.com', 'male', 'password404','TO'),
+(118, 'Olivia', '', 'Anderson', '8901234567890', '222 Elm St', 'olivia@example.com', 'female', 'password505','admin'),
+(119, 'James', '', 'Garcia', '9012345678901', '333 Oak St', 'james@example.com', 'male', 'password606','admin'),
+(120, 'Sophia', '', 'Hernandez', '0123456789012', '444 Maple St', 'sophia@example.com', 'female', 'password707','admin');
 
 -- --------------------------------------------------------
 
